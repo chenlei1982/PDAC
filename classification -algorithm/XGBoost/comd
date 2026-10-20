@@ -1,0 +1,3 @@
+foreach file (input-file)
+python xgb-kfold-run.py --datapath $file -t 100 -d 3 -r 0 -k 10 > rate_xgboost_t_100_d_3_r_0_k_10_$file 
+end
