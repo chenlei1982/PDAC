@@ -1,0 +1,4 @@
+foreach file (input-file)
+python sk-tree-kfold-smote-run.py --datapath $file -c ada > rate_10-folds_Adaboost_$file
+python sk-tree-kfold-smote-run.py --datapath $file -c ext > rate_10-folds_ExtraTrees_$file
+end

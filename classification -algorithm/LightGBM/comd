@@ -1,0 +1,3 @@
+foreach file (input-file)
+python lgb-smote-kfold-run.py --datapath $file -b gbdt -t 100 -d 3 -r 0 -k 10 > rate_b_gbdt_t_100_d_3_r_0_k_10_$file
+end
